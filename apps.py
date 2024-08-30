@@ -12,7 +12,7 @@ def show_section(section):
             """
             <div style='text-align: center;'>
                 <a href='https://mywebsite.com/' target='_blank'>
-                    <img src='https://logos-world.net/wp-content/uploads/2020/04/Samsung-Logo.png' alt='My App' style='width:1500px;'>
+                    <img src='https://images.samsung.com/is/image/samsung/assets/global/about-us/brand/logo/mo/256_144_4.png?$512_N_PNG$' alt='My App' style='width:1500px;'>
                 </a>
                 <p style='text-align: center;'>A brief description of what my app does</p>
             </div>

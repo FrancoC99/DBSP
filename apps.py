@@ -2,17 +2,17 @@ import streamlit as st
 
 # Título de la barra lateral y opciones de navegación
 st.sidebar.title("Navigation")
-section = st.sidebar.radio("Go to", ["Home", "Section 1", "Section 2", "Section 3", "Section 4"], index=0)
+section = st.sidebar.radio("Go to", ["Home", "Total M/S", "Clusters", "Los mayores incrementos", "Gráficos"], index=0)
 
 # Función para mostrar la sección seleccionada
 def show_section(section):
     if section == "Home":
-        st.markdown("<h1 style='text-align: center;'>Welcome to My App</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 style='text-align: center;'>Análisis de Cuota de Mercado (Nielsen)</h1>", unsafe_allow_html=True)
         st.markdown(
             """
             <div style='text-align: center;'>
                 <a href='https://mywebsite.com/' target='_blank'>
-                    <img src='https://example.com/my-image.jpg' alt='My App' style='width:1500px;'>
+                    <img src='https://logos-world.net/wp-content/uploads/2020/04/Samsung-Logo.png' alt='My App' style='width:1500px;'>
                 </a>
                 <p style='text-align: center;'>A brief description of what my app does</p>
             </div>
@@ -20,8 +20,8 @@ def show_section(section):
             unsafe_allow_html=True
         )
     
-    elif section == "Section 1":
-        st.header("Section 1 Analysis")
+    elif section == "Total M/S":
+        st.header("Total M/S Análisis")
         # Cambia 'df' y los nombres de columnas según tus datos
         state = st.selectbox('Select an option', df['column_name'].unique())
         category = st.selectbox('Select a category', df['category_name'].unique())
@@ -32,8 +32,8 @@ def show_section(section):
             # Llama a la función de análisis con los datos seleccionados
             analyze_data(option, state, category)
 
-    elif section == "Section 2":
-        st.header("Section 2 Analysis")
+    elif section == "Clusters":
+        st.header("Clusters Análisis")
         selected_metric = st.selectbox('Select metric', ['Metric 1', 'Metric 2'])
         
         # Verifica columnas necesarias y valores no nulos
